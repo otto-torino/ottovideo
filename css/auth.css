@@ -1,0 +1,44 @@
+body {
+	font-family: sans-serif, "Lucida Grande", Verdana, Arial;
+	background-color:#eee;
+	text-align:center;
+	font-size:11px;
+}
+
+form {
+	margin: 0;
+}
+
+legend {
+	color: #fd9800;
+}
+
+div#container {
+	margin:auto;
+	margin-top:50px;
+	width:350px;
+}
+
+div.error {
+	margin-top:10px;
+	font-size:12px;
+	font-weight:bold;
+}
+
+div#logoContainer {
+	float:left;
+	width: 62px;
+	height: 78px;
+	background-image: url('../img/webTV.png');
+	margin-right:20px;
+}
+
+div#loginField {
+	float:left;
+	width:200px;
+}
+
+div#loginField input[type=text], div#loginField input[type=password] {
+	width:100px;
+	font-size:11px;
+}

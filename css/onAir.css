@@ -1,0 +1,104 @@
+/*
+ * Pay attention modifying margin, padding, width and height properties.
+ * Many of these properties are set inline, and derive from a calculation based upon layout 
+ * dimensions values.
+ */
+body {
+	font-family: sans-serif, "Lucida Grande", Verdana, Arial;
+	font-size:12px;
+	margin:0px;
+	padding:0px;
+	background-color:#000;
+}
+.tips { /* tooltips style */
+	background-color:#666;
+	border:1px solid #000;
+	color:#fff;
+	padding:5px;
+	/*opacity:0.6;
+	filter: alpha(opacity = 50);*/
+	max-width: 220px;
+	font-size: 0.8em;
+}
+
+table td {
+	vertical-align:top;
+}
+
+div#onAirContainer { /*Do not set height, width, margin-top/bottom padding-top/bottom properties!!*/
+	position:relative;
+	left:0px;
+	top:0px;
+}
+
+div.scheduleTitle {
+	margin: 2px 0px 5px; /* do not set margin-top/down more than 10px */
+	font-weight: bold;
+	color:#fff;
+}
+
+div#scheduleContainer { /*Do not set height, width, margin-top/bottom padding-top/bottom, overflow properties!!*/
+	margin-top:10px;
+}
+
+/*
+LIST
+*/
+.slide {
+	background-color:#000;
+}
+.videoStartTime {
+	margin-top : 10px;
+	font-weight:bold;
+	color:#caca1c;
+}
+
+.videoTitle {
+	margin : 2px;
+	font-weight:bold;
+	color:#fff;
+	border-bottom: 1px dotted #caca1c;
+	padding-bottom:8px;
+}
+
+.videoDescription {
+	margin : 10px;
+}
+.videoImg {
+	position:relative;
+}
+
+/* Vertical List */
+
+div.topCtrl {
+	background: transparent url('../img/bkg_ctrl_top.jpg') top center;
+	/*background: #b8b7b7 url('../img/arrowTOP.png') no-repeat center center;*/
+	cursor:pointer;
+}
+div.bottomCtrl {
+	background: transparent url('../img/bkg_ctrl_bottom.jpg') bottom center;
+	cursor:pointer;
+}
+div.topCtrlOver {
+	background: transparent url('../img/bkg_ctrl_top.jpg') center center;
+	cursor:pointer;
+}
+div.bottomCtrlOver {
+	background: transparent url('../img/bkg_ctrl_bottom.jpg') center center;
+	cursor:pointer;
+}
+
+div.topCtrlOff {
+	background: transparent url('../img/bkg_ctrl_top.jpg') bottom center;
+
+}
+div.bottomCtrlOff {
+	background: transparent url('../img/bkg_ctrl_bottom.jpg') top center;
+}
+
+/*
+ * DON'T CHANGE WHAT FOLLOW
+ */
+.null {
+	clear: both; 	
+}

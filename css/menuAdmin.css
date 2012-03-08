@@ -1,0 +1,190 @@
+/* Root = Horizontal, Secondary = Vertical */
+ul.mainmenu {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  width: auto; /*For KHTML*/
+  list-style: none;
+  height: 24px;
+}
+li.withSelected {
+	border:1px solid #000;
+}
+ul.mainmenu li {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  float: left; /*For Gecko*/
+  display: inline;
+  list-style: none;
+  position: relative;
+  height: 24px;
+  text-align:center;
+}
+ul.mainmenu li.withChildren {
+  background-color: #fff;
+}
+/* SUBMENUS */
+
+ul.mainmenu ul {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  width: auto;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  z-index:10;
+  width: 160px;
+}
+
+ul.mainmenu ul:after /*From IE 7 lack of compliance*/{
+  clear: both;
+  display: block;
+  font: 1px/0px serif;
+  content: ".";
+  height: 0;
+  visibility: hidden;
+}
+
+ul.mainmenu ul li {
+  width: 160px;
+  float: left; /*For IE 7 lack of compliance*/
+  display: block !important;
+  display: inline; /*For IE*/
+  text-align:left;
+  z-index:10;
+}
+
+/* Root Menu */
+ul.mainmenu a {
+  border: 1px solid #FFF;
+  border-right-color: #CCC;
+  border-bottom-color: #CCC;
+  padding: 0 10px;;
+  float: none !important; /*For Opera*/
+  float: left; /*For IE*/
+  display: block;
+  background: #EEE;
+  color: #666;
+  font: bold 10px/22px Verdana, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  height: auto !important;
+  height: 1%; /*For IE*/
+}
+
+ul.mainmenu a.withChildrenH {
+  border: 1px solid #FFF;
+  border-right-color: #CCC;
+  border-bottom-color: #cc3333;
+  padding: 0 10px;;
+  float: none !important; /*For Opera*/
+  float: left; /*For IE*/
+  display: block;
+  background: #EEE;
+  color: #666;
+  font: bold 10px/22px Verdana, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  height: auto !important;
+  height: 1%; /*For IE*/
+}
+
+
+ul.mainmenu a.withChildrenV {
+  border: 1px solid #FFF;
+  border-right-color: #CCC;
+  border-bottom-color: #CCC;
+  padding: 0 10px;
+  float: none !important; /*For Opera*/
+  float: left; /*For IE*/
+  display: block;
+  background: #EEE;
+  background-image: url('../img/icons/icoMoreV.png');
+  background-repeat:no-repeat;
+  background-position: right center;
+  color: #666;
+  font: bold 10px/22px Verdana, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  height: auto !important;
+  height: 1%; /*For IE*/
+}
+
+ul.mainmenu a.withSelected {
+  background-color:#637581;
+  color: #fff;
+}
+
+/* Root Menu Hover Persistence */
+ul.mainmenu a:hover {
+  background-color: #CCC;
+  color: #FFF;
+}
+
+/* 2nd Menu */
+ul.mainmenu li:hover li a,
+ul.mainmenu li.iehover li a {
+  float: none;
+}
+
+ul.mainmenu ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 160px;
+}
+
+/* Do Not Move - Must Come Before display:block for Gecko */
+ul.mainmenu li:hover ul ul,
+ul.mainmenu li.iehover ul ul {
+  display: none;
+}
+
+ul.mainmenu li:hover ul,
+ul.mainmenu ul li:hover ul {
+  display: block;
+}
+
+ul.mainmenu li.iehover ul,
+ul.mainmenu ul li.iehover ul {
+  display: block;
+}
+
+li.persistHover,
+a.persistHover
+{
+	background: #CCC;
+	color: #FFF;
+}
+
+
+span.moreV {
+	width: 13px;
+	text-align: center;
+	line-height: 10px;
+	padding-left: 3px;
+	background: #4e94ca;
+	color: white;
+	font-size: 12px;
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	bottom: 1px;
+}
+
+span.moreH {
+	width: 13px;
+	text-align: center;
+	line-height: 10px;
+	padding-left: 3px;
+	font-size: 12px;
+	position: absolute;
+	left: 1px;
+	top: 7px;
+	bottom: 1px;
+}
+
+div.pathToSelVoice {
+	margin: 5px 0px 5px 0px;
+}

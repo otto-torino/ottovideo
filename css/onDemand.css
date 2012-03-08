@@ -1,0 +1,391 @@
+/*
+ * Pay attention modifying margin, padding, width and height properties.
+ * Many of these properties are set inline, and derive from a calculation based upon layout 
+ * dimensions values.
+ */
+body {
+	font-family: sans-serif, "Lucida Grande", Verdana, Arial;
+	font-size:12px;
+	margin:0;
+	padding:0;
+	background-color:#000;
+}
+.tips { /* tooltips style */
+	background-color:#666;
+	border:1px solid #000;
+	color:#fff;
+	padding:5px;
+	/*opacity:0.6;
+	filter: alpha(opacity = 50);*/
+	max-width: 220px;
+	font-size: 0.8em;
+}
+.right {
+	float:right;
+}
+.left {
+	float:left;
+}
+.null {
+	clear: both; 	
+}
+.link {
+	cursor:pointer;
+	text-decoration:underline;
+	color: #caca1c;
+}
+.link:hover {
+	text-decoration: none;
+}
+
+table td {
+	vertical-align:top;
+}
+
+div#onDemandContainer { /*Do not set height, width, margin-top/bottom padding-top/bottom properties!!*/
+	position:relative;
+	left:0px;
+	top:0px;
+}
+
+div#player { /*Do not set height, width, margin-top/bottom padding-top/bottom properties!!*/
+
+}
+
+div#videoNumber { /*Do not set width, margin-top/bottom padding-top/bottom properties!!*/
+	height: 20px; /* IMPORTANT! ctgFilter.height + videoNumber.height = 60 */
+}
+
+div#videoNumber span { 
+	float: right;
+}
+
+div#ctgFilter {
+	padding: 10px 0;
+	/*background-color: #b0b6b8;*/
+	background-color: #000;
+	color:#fff;
+	height: 50px;
+}
+
+div#ctgFilter fieldset {
+	border:1px dotted #26333c;
+	padding: 4px;
+	height:35px;
+}
+
+div#ctgFilter fieldset select {
+	font-size: 10px;
+	min-width: 150px;
+}
+
+div#ctgFilter legend {
+	font-weight: bold;
+	color:#fff;
+	padding:0 5px;
+}
+div#newFilter {
+	padding: 10px 0;
+	/*background-color: #b0b6b8;*/
+	background-color: #000;
+	color:#fff;
+	height: 50px;
+}
+div#newFilter fieldset {
+	border:1px dotted #26333c;
+	padding: 4px;
+	height:35px;
+}
+div#newFilter legend {
+	font-weight: bold;
+	color:#fff;
+	padding:0 5px;
+}
+
+div#descFilter {
+	padding: 10px 0;
+	/*background-color: #b0b6b8;*/
+	background-color: #000;
+	color:#fff;
+	height: 50px;
+}
+div#descFilter fieldset {
+	border:1px dotted #26333c;
+	padding: 4px;
+	height:35px;
+}
+div#descFilter legend {
+	font-weight: bold;
+	color:#fff;
+	padding:0 5px;
+}
+
+div#descFilter input {
+	border:1px solid #000;
+	font-size: 10px;
+	width: 200px;
+}
+img#icoFilter {
+	position:relative;
+	top:3px;
+}
+/*
+LIST
+*/
+.slide {
+	background-color:#000;
+}
+
+.videoTitle {
+	margin : 8px;
+	font-weight:bold;
+	color:#fff;
+	border-bottom: 1px dotted #caca1c;
+	padding-bottom:6px;
+}
+
+.videoDescription {
+	margin : 6px;
+}
+
+.videoSocial {
+	margin : 6px;
+}
+.videoSocial a {
+	text-decoration: none;
+}
+.videoSocial img {
+	border-width: 0px;
+}
+
+
+.videoInsertionDate {
+	margin : 10px;
+	font-style: italic;
+}
+
+.videoDuration {
+	position:absolute;
+	color:#caca1c;
+	background-color: #000;
+	padding: 4px;
+	text-align: center;
+	cursor:pointer;
+	font-size:10px;
+}
+
+.videoNew {
+	position:absolute;	
+	color:#000;
+	background-color: #caca1c;
+	padding: 4px;
+	text-align: center;
+	font-size:10px;
+}
+
+.videoInfo {
+	position:absolute;
+	bottom: 6px;
+	left:6px;
+	color:#000;
+	background-color: #99ff66;
+	padding: 4px;
+	text-align: center;
+	cursor:pointer;
+	font-size:10px;
+}
+
+.videoImg {
+	position:relative;
+}
+
+.dnew {
+	bottom: 11px;
+	right:6px;
+}
+.ddur {
+	bottom: 11px;
+	left:6px;
+}
+.html5 {
+	width:45px;
+	height:45px;
+	background: url('../img/logo_html5.png') no-repeat center center;
+}
+.html5_txt {
+	margin-left:5px;
+	font-size:10px;
+	width: 80px;
+}
+/* Horizontal list */
+
+div.leftCtrl {
+	background: transparent url('../img/bkg_ctrl_left.jpg') center left;
+	cursor:pointer;
+}
+div.rightCtrl {
+	background: transparent url('../img/bkg_ctrl_right.jpg') center right;
+	cursor:pointer;
+}
+div.leftCtrlOver {
+	background: transparent url('../img/bkg_ctrl_left.jpg') center center;
+	cursor:pointer;
+}
+div.rightCtrlOver {
+	background: transparent url('../img/bkg_ctrl_right.jpg') center center;
+	cursor:pointer;
+}
+
+div.leftCtrlOff {
+	background: transparent url('../img/bkg_ctrl_left.jpg') center right;
+
+}
+div.rightCtrlOff {
+	background: transparent url('../img/bkg_ctrl_right.jpg') center left;
+}
+
+.himg {
+	background-color:#fff;
+	margin: 10px 10px 0px 10px;
+}
+.itemTitle {
+	background-color:#fff;
+	color: #666;
+	margin: 0px 10px 10px 10px;
+	text-align:center;
+	font-size: 10px;
+	font-weight: bold;
+}
+.dlayer {
+	background-color: #000;
+	color:#fff;
+}
+
+.hnew {
+	bottom: 6px;
+	right:6px;
+}
+.hinfo {
+	bottom: 6px;
+	left:6px;
+}
+/* Vertical List */
+
+div.topCtrl {
+	background: transparent url('../img/bkg_ctrl_top.jpg') top center;
+	/*background: #b8b7b7 url('../img/arrowTOP.png') no-repeat center center;*/
+	cursor:pointer;
+}
+div.bottomCtrl {
+	background: transparent url('../img/bkg_ctrl_bottom.jpg') bottom center;
+	cursor:pointer;
+}
+div.topCtrlOver {
+	background: transparent url('../img/bkg_ctrl_top.jpg') center center;
+	cursor:pointer;
+}
+div.bottomCtrlOver {
+	background: transparent url('../img/bkg_ctrl_bottom.jpg') center center;
+	cursor:pointer;
+}
+
+div.topCtrlOff {
+	background: transparent url('../img/bkg_ctrl_top.jpg') bottom center;
+
+}
+div.bottomCtrlOff {
+	background: transparent url('../img/bkg_ctrl_bottom.jpg') top center;
+}
+.itemContainer {
+	/*background: transparent url('../img/bkg_item.jpg') repeat-x top left;*/
+	background: #000;
+	color:#fff;
+	padding: 0px;
+	margin: 0;
+}
+.vnew {
+	bottom: 10px;
+	right:5px;
+}
+.vdur {
+	bottom: 10px;
+	left:5px;
+}
+
+/* FORM */
+label {
+	line-height: 20px;
+}
+input[type=text], textarea {
+	font-size: 0.9em;
+	border: 1px solid #eee;
+}
+input[type=submit], input[type=button] {
+	font-size: 0.9em;
+	border: 1px solid #ddd;
+	background: #eee;
+}
+/* COMMENTS */
+.comments_list {
+	list-style-position: outside;
+	padding-left: 0px;
+}
+.comments_list li {
+	list-style-type:none;
+	background: #c9cc01;	
+	padding: 5px;
+	margin: 10px 0 0;
+	color: #000;
+	-moz-border-radius: 8px 8px;
+	-webkit-border-radius: 8px 8px;
+	-a-border-radius: 8px 8px;
+}
+.comments_list .text {
+	border-top: 1px dotted #fff;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+.comments_list .author, .comments_list .date {
+	font-size: 0.9em;
+	color: #333;
+}
+li.callout {
+	background: transparent !important;
+	height: 10px;
+	padding: 0;
+	margin: 0;
+}
+div.callout {
+	position:relative;
+	float:left;
+	left: 20px;
+	width: 0px;
+	height: 0px;
+	border-top: 10px solid #c9cc01;
+	border-right: 10px solid transparent;
+	margin: 0;
+}
+
+.videoComments {
+	position:absolute;
+	top: 10px;
+	left: 5px;
+	background: #599cd0;
+	color: #000;
+	width:25px;
+	height: 15px;
+	text-align:center;
+	font-size: 10px;
+	padding-top: 2px;
+}
+div.videoCommentsCollout {
+	position:absolute;
+	float:left;
+	left: 10px;
+	top: 27px;
+	width: 0px;
+	height: 0px;
+	border-top: 10px solid #599cd0;
+	border-right: 10px solid transparent;
+	margin: 0;
+}

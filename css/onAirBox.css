@@ -1,0 +1,86 @@
+/*
+ * Pay attention modifying margin, padding, width and height properties.
+ * Many of these properties are set inline, and derive from a calculation based upon layout 
+ * dimensions values.
+ */
+/*body {
+	font-family: sans-serif, "Lucida Grande", Verdana, Arial;
+	font-size:12px;
+	margin:0px;
+	padding:0px;
+	background-color:#fff;
+}
+.tips {
+	background-color:#0099cc;
+	border:1px solid #000;
+	color:#fff;
+	padding:5px;
+	opacity:0.6;
+	filter: alpha(opacity = 50);
+	max-width: 220px;
+}
+*/
+
+/* ON AIR BOX */
+/*
+div#onAirBoxContainer {
+	border-top: 1px dotted #c9d227;
+	border-bottom: 1px dotted #c9d227;
+	background: #ffffff;
+	position:relative;
+}
+
+div#onAirBoxContent {
+	padding: 4px 0px;
+	font-size:12px;
+	height:16px;
+	width:10000em;
+}
+div#testOnAirBoxContent {
+	font-size:12px;      /* must be the same as onAirBoxContent *//*
+	height:0px;
+}
+span.videoTitle {
+	font-weight: bold;
+	font-style: italic;
+}
+*/
+/*
+ * DON'T CHANGE WHAT FOLLOW
+ */
+/*
+.null {
+	clear: both; 	
+}
+*/
+
+/* NEW */
+body {
+	margin:0px;
+	padding:0px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+div#onAirBoxContainer {
+	background: #d3e0f1 url('../img/onAir.jpg') no-repeat top left;
+	padding: 10px;
+	padding-top: 120px;
+}
+.time {
+	color: #364c57;
+	font-size: 1.1em;
+}
+.title {
+	color: #364c57;
+	font-size: 0.8em;
+	margin-bottom: 10px;
+}
+.at_time {
+	color: #8b1340;
+	font-size: 1.0em;
+}
+img {
+	border: 1px solid #366b94;
+}
+	
+
+
